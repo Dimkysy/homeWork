@@ -19,20 +19,30 @@ import GreetingContainer from './GreetingContainer'
 
 // types
 export type UserType = {
-    _id: any // need to fix any
-    name: any // need to fix any
+    _id: number // need to fix any
+    name: string // need to fix any
 }
 
-export const pureAddUserCallback = (name: any, setUsers: any, users: any) => { // need to fix any
+export const pureAddUserCallback = (name: string, setUsers: (value:Array<UserType>)=>void , users: Array<UserType>) => { // need to fix any
+    debugger
+
     const user = { // need to fix
+        _id:6,
+        name:name,
     }
     setUsers([...users, user])
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<any>([]) // need to fix any
+    const [users, setUsers] = useState<Array<UserType>>( [
+        {_id: 1, name: 'React'},
+        {_id: 2, name: 'anime'},
+        {_id: 3, name: 'games'},
+        {_id: 4, name: 'work'},
+        {_id: 5, name: 'html & css'},
+    ]) // need to fix any
 
-    const addUserCallback = (name: any) => { // need to fix any
+    const addUserCallback = (name: string) => { // need to fix any
         pureAddUserCallback(name, setUsers, users)
     }
 
@@ -49,6 +59,9 @@ const HW3 = () => {
             </div>
         </div>
     )
+
 }
+
+
 
 export default HW3
