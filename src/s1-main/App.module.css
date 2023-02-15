@@ -1,9 +1,19 @@
 .App {
     --header_height: 60px;
+}
+
+.hw1 {
     margin-top:131px;
 
     display: flex;
-    justify-content: center;
+    justify-content:center;
+}
+
+.hw2 {
+    margin-top:131px;
+
+    display: flex;
+    justify-content:center;
 }
 
 .hw {
@@ -18,4 +28,6 @@
     font-size: 22px;
     line-height: 27px;
     font-weight: 600;
+
+
 }
