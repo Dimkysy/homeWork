@@ -11,10 +11,10 @@
 }
 
 .errorInput {
+    border: 1px solid red;
 }
 
 .errorInput:focus {
-
 }
 
 .error {
