@@ -54,7 +54,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
 
 
-    const finalInputClassName = `${s.input}  + ${error ? s.errorInput : ""}`
+    const finalInputClassName = `${s.input}  + ${error ? s.errorInput : ""} + ${s.superInput}`
 
 
     // const finalInputClassName = s.input
