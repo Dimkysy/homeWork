@@ -1,16 +1,43 @@
 .button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12.5px;
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align: top;
+    color: #FFFFFF;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    overflow: hidden;
+    width: 132px;
 }
 
 .disabled {
+    color: #002E5C;
+    opacity: 0.5;
+
 }
 
 .secondary {
+    border:1px solid #0066CC;
+    background-color: #FFFFFF;
+    color: #0066CC;
 }
 
 .default {
+    background-color: #0066CC;
 }
 
 .red {
+    background-color: red;
 }
 
 .default:hover {
